@@ -13,6 +13,7 @@
 		DEC5C9E119EADC8C008E3B30 /* Icon40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9DB19EADC8C008E3B30 /* Icon40@3x.png */; };
 		DEC5C9E219EADC8C008E3B30 /* Icon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9DC19EADC8C008E3B30 /* Icon60@2x.png */; };
 		DEC5C9E319EADC8C008E3B30 /* Icon60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9DD19EADC8C008E3B30 /* Icon60@3x.png */; };
+		DEC5C9E719EADDB0008E3B30 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5C9E619EADDB0008E3B30 /* CloudKit.framework */; };
 		DEE8C5C519EA2D6C00B13ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5C419EA2D6C00B13ECF /* AppDelegate.swift */; };
 		DEE8C5C719EA2D6C00B13ECF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5C619EA2D6C00B13ECF /* FirstViewController.swift */; };
 		DEE8C5C919EA2D6C00B13ECF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5C819EA2D6C00B13ECF /* SecondViewController.swift */; };
@@ -39,6 +40,8 @@
 		DEC5C9DB19EADC8C008E3B30 /* Icon40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon40@3x.png"; sourceTree = "<group>"; };
 		DEC5C9DC19EADC8C008E3B30 /* Icon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon60@2x.png"; sourceTree = "<group>"; };
 		DEC5C9DD19EADC8C008E3B30 /* Icon60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon60@3x.png"; sourceTree = "<group>"; };
+		DEC5C9E519EADDAE008E3B30 /* OnCall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OnCall.entitlements; sourceTree = "<group>"; };
+		DEC5C9E619EADDB0008E3B30 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DEE8C5BF19EA2D6C00B13ECF /* OnCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE8C5C319EA2D6C00B13ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE8C5C419EA2D6C00B13ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC5C9E719EADDB0008E3B30 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +90,7 @@
 		DEE8C5B619EA2D6C00B13ECF = {
 			isa = PBXGroup;
 			children = (
+				DEC5C9E619EADDB0008E3B30 /* CloudKit.framework */,
 				DEE8C5C119EA2D6C00B13ECF /* OnCall */,
 				DEE8C5D919EA2D6C00B13ECF /* OnCallTests */,
 				DEE8C5C019EA2D6C00B13ECF /* Products */,
@@ -104,6 +109,7 @@
 		DEE8C5C119EA2D6C00B13ECF /* OnCall */ = {
 			isa = PBXGroup;
 			children = (
+				DEC5C9E519EADDAE008E3B30 /* OnCall.entitlements */,
 				DEE8C5C419EA2D6C00B13ECF /* AppDelegate.swift */,
 				DEE8C5C619EA2D6C00B13ECF /* FirstViewController.swift */,
 				DEE8C5C819EA2D6C00B13ECF /* SecondViewController.swift */,
@@ -190,6 +196,12 @@
 				TargetAttributes = {
 					DEE8C5BE19EA2D6C00B13ECF = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = FYTAZBH4C6;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					DEE8C5D519EA2D6C00B13ECF = {
 						CreatedOnToolsVersion = 6.0;
@@ -372,9 +384,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OnCall/OnCall.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OnCall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -382,9 +399,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OnCall/OnCall.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OnCall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
