@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2A0AE31A084EE200BF0099 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */; };
+		DE2A0AE61A08516B00BF0099 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A0AE51A08516B00BF0099 /* CloudKit.framework */; };
 		DEC5C9DE19EADC8C008E3B30 /* Icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9D819EADC8C008E3B30 /* Icon29@2x.png */; };
 		DEC5C9DF19EADC8C008E3B30 /* Icon29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9D919EADC8C008E3B30 /* Icon29@3x.png */; };
 		DEC5C9E019EADC8C008E3B30 /* Icon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9DA19EADC8C008E3B30 /* Icon40@2x.png */; };
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		DE2A0AE41A08516700BF0099 /* OnCall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OnCall.entitlements; sourceTree = "<group>"; };
+		DE2A0AE51A08516B00BF0099 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DEC5C9D819EADC8C008E3B30 /* Icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon29@2x.png"; sourceTree = "<group>"; };
 		DEC5C9D919EADC8C008E3B30 /* Icon29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon29@3x.png"; sourceTree = "<group>"; };
 		DEC5C9DA19EADC8C008E3B30 /* Icon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon40@2x.png"; sourceTree = "<group>"; };
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2A0AE61A08516B00BF0099 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,7 @@
 		DEE8C5B619EA2D6C00B13ECF = {
 			isa = PBXGroup;
 			children = (
+				DE2A0AE51A08516B00BF0099 /* CloudKit.framework */,
 				DEE8C5C119EA2D6C00B13ECF /* OnCall */,
 				DEE8C5D919EA2D6C00B13ECF /* OnCallTests */,
 				DEE8C5C019EA2D6C00B13ECF /* Products */,
@@ -104,9 +111,11 @@
 		DEE8C5C119EA2D6C00B13ECF /* OnCall */ = {
 			isa = PBXGroup;
 			children = (
+				DE2A0AE41A08516700BF0099 /* OnCall.entitlements */,
 				DEE8C5C419EA2D6C00B13ECF /* AppDelegate.swift */,
 				DEE8C5C619EA2D6C00B13ECF /* FirstViewController.swift */,
 				DEE8C5C819EA2D6C00B13ECF /* SecondViewController.swift */,
+				DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */,
 				DEE8C5CA19EA2D6C00B13ECF /* Main.storyboard */,
 				DEE8C5CD19EA2D6C00B13ECF /* Images.xcassets */,
 				DEE8C5CF19EA2D6C00B13ECF /* LaunchScreen.xib */,
@@ -190,6 +199,12 @@
 				TargetAttributes = {
 					DEE8C5BE19EA2D6C00B13ECF = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = FYTAZBH4C6;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					DEE8C5D519EA2D6C00B13ECF = {
 						CreatedOnToolsVersion = 6.0;
@@ -247,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2A0AE31A084EE200BF0099 /* CreateAccountViewController.swift in Sources */,
 				DEE8C5C919EA2D6C00B13ECF /* SecondViewController.swift in Sources */,
 				DEE8C5C519EA2D6C00B13ECF /* AppDelegate.swift in Sources */,
 				DEE8C5C719EA2D6C00B13ECF /* FirstViewController.swift in Sources */,
@@ -372,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OnCall/OnCall.entitlements;
 				INFOPLIST_FILE = OnCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OnCall/OnCall.entitlements;
 				INFOPLIST_FILE = OnCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
