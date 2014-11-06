@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  SignUpViewController.swift
 //  OnCall
 //
 //  Created by Nikita Shenkman on 11/6/14.
@@ -8,30 +8,20 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    
-    
+class SignUpViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-   @IBAction func login_button(sender: UIButton) {
-    let vc = FirstViewController()
-    self.presentViewController(vc, animated: true, completion: nil);
-    }
-    
 
-    @IBAction func signup_button(sender: UIButton) {
-        let vc = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
-        self.presentViewController(vc, animated: true, completion: nil);
-
-    }
     /*
     // MARK: - Navigation
 

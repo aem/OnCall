@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B8EB41E1A0C297700B33F0A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EB41C1A0C297700B33F0A /* SignUpViewController.swift */; };
+		9B8EB41F1A0C297700B33F0A /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */; };
 		9BBD7EA71A0BEB3E003AAD2D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */; };
 		9BBD7EA81A0BEB3E003AAD2D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */; };
 		DEC5C9DE19EADC8C008E3B30 /* Icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9D819EADC8C008E3B30 /* Icon29@2x.png */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B8EB41C1A0C297700B33F0A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		DEC5C9D819EADC8C008E3B30 /* Icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon29@2x.png"; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				DEE8C5C219EA2D6C00B13ECF /* Supporting Files */,
 				9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */,
 				9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */,
+				9B8EB41C1A0C297700B33F0A /* SignUpViewController.swift */,
+				9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */,
 			);
 			path = OnCall;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 				DEC5C9E319EADC8C008E3B30 /* Icon60@3x.png in Resources */,
 				DEC5C9E219EADC8C008E3B30 /* Icon60@2x.png in Resources */,
 				DEE8C5CC19EA2D6C00B13ECF /* Main.storyboard in Resources */,
+				9B8EB41F1A0C297700B33F0A /* SignUpViewController.xib in Resources */,
 				DEE8C5D119EA2D6C00B13ECF /* LaunchScreen.xib in Resources */,
 				DEC5C9DF19EADC8C008E3B30 /* Icon29@3x.png in Resources */,
 				DEC5C9DE19EADC8C008E3B30 /* Icon29@2x.png in Resources */,
@@ -270,6 +277,7 @@
 				DEE8C5C919EA2D6C00B13ECF /* SecondViewController.swift in Sources */,
 				DEE8C5C519EA2D6C00B13ECF /* AppDelegate.swift in Sources */,
 				DEE8C5C719EA2D6C00B13ECF /* FirstViewController.swift in Sources */,
+				9B8EB41E1A0C297700B33F0A /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

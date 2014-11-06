@@ -14,12 +14,13 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
 
     }
     
     override func viewDidAppear(animated: Bool) {
         let lc = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        
         self.presentViewController(lc, animated: animated, completion: nil)
     }
     
@@ -28,6 +29,12 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
         
         
+    }
+    
+    func launchLoginViewController() {
+        let lc = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        
+        self.presentViewController(lc, animated: true, completion: nil)
     }
     
     
