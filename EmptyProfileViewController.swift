@@ -1,7 +1,5 @@
-
-
 //
-//  SignUpViewController.swift
+//  EmptyProfileViewController.swift
 //  OnCall
 //
 //  Created by Nikita Shenkman on 11/6/14.
@@ -10,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class EmptyProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +19,6 @@ class SignUpViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    @IBAction func return_login(sender: UIButton) {
-        
-        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9B8EB41E1A0C297700B33F0A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EB41C1A0C297700B33F0A /* SignUpViewController.swift */; };
 		9B8EB41F1A0C297700B33F0A /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */; };
+		9B99C0F51A0C637100C11359 /* EmptyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B99C0F31A0C637100C11359 /* EmptyProfileViewController.swift */; };
+		9B99C0F61A0C637100C11359 /* EmptyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B99C0F41A0C637100C11359 /* EmptyProfileViewController.xib */; };
+		9BBC2E3F1A0C5B5100DAFF17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC2E3E1A0C5B5100DAFF17 /* Main.storyboard */; };
 		9BBD7EA71A0BEB3E003AAD2D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */; };
 		9BBD7EA81A0BEB3E003AAD2D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */; };
 		DE2A0AE31A084EE200BF0099 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */; };
@@ -22,9 +25,7 @@
 		DEE8C5C519EA2D6C00B13ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5C419EA2D6C00B13ECF /* AppDelegate.swift */; };
 		DEE8C5C719EA2D6C00B13ECF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5C619EA2D6C00B13ECF /* FirstViewController.swift */; };
 		DEE8C5C919EA2D6C00B13ECF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5C819EA2D6C00B13ECF /* SecondViewController.swift */; };
-		DEE8C5CC19EA2D6C00B13ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE8C5CA19EA2D6C00B13ECF /* Main.storyboard */; };
 		DEE8C5CE19EA2D6C00B13ECF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE8C5CD19EA2D6C00B13ECF /* Images.xcassets */; };
-		DEE8C5D119EA2D6C00B13ECF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE8C5CF19EA2D6C00B13ECF /* LaunchScreen.xib */; };
 		DEE8C5DD19EA2D6C00B13ECF /* OnCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5DC19EA2D6C00B13ECF /* OnCallTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,9 @@
 /* Begin PBXFileReference section */
 		9B8EB41C1A0C297700B33F0A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		9B99C0F31A0C637100C11359 /* EmptyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyProfileViewController.swift; path = ../EmptyProfileViewController.swift; sourceTree = "<group>"; };
+		9B99C0F41A0C637100C11359 /* EmptyProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmptyProfileViewController.xib; path = ../EmptyProfileViewController.xib; sourceTree = "<group>"; };
+		9BBC2E3E1A0C5B5100DAFF17 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +61,7 @@
 		DEE8C5C419EA2D6C00B13ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE8C5C619EA2D6C00B13ECF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		DEE8C5C819EA2D6C00B13ECF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		DEE8C5CB19EA2D6C00B13ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEE8C5CD19EA2D6C00B13ECF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DEE8C5D019EA2D6C00B13ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DEE8C5D619EA2D6C00B13ECF /* OnCallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnCallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE8C5DB19EA2D6C00B13ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE8C5DC19EA2D6C00B13ECF /* OnCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnCallTests.swift; sourceTree = "<group>"; };
@@ -124,14 +126,15 @@
 				DEE8C5C619EA2D6C00B13ECF /* FirstViewController.swift */,
 				DEE8C5C819EA2D6C00B13ECF /* SecondViewController.swift */,
 				DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */,
-				DEE8C5CA19EA2D6C00B13ECF /* Main.storyboard */,
+				9BBC2E3E1A0C5B5100DAFF17 /* Main.storyboard */,
 				DEE8C5CD19EA2D6C00B13ECF /* Images.xcassets */,
-				DEE8C5CF19EA2D6C00B13ECF /* LaunchScreen.xib */,
 				DEE8C5C219EA2D6C00B13ECF /* Supporting Files */,
 				9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */,
 				9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */,
 				9B8EB41C1A0C297700B33F0A /* SignUpViewController.swift */,
 				9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */,
+				9B99C0F31A0C637100C11359 /* EmptyProfileViewController.swift */,
+				9B99C0F41A0C637100C11359 /* EmptyProfileViewController.xib */,
 			);
 			path = OnCall;
 			sourceTree = "<group>";
@@ -251,12 +254,12 @@
 				9BBD7EA81A0BEB3E003AAD2D /* LoginViewController.xib in Resources */,
 				DEC5C9E119EADC8C008E3B30 /* Icon40@3x.png in Resources */,
 				DEC5C9E319EADC8C008E3B30 /* Icon60@3x.png in Resources */,
+				9BBC2E3F1A0C5B5100DAFF17 /* Main.storyboard in Resources */,
 				DEC5C9E219EADC8C008E3B30 /* Icon60@2x.png in Resources */,
-				DEE8C5CC19EA2D6C00B13ECF /* Main.storyboard in Resources */,
 				9B8EB41F1A0C297700B33F0A /* SignUpViewController.xib in Resources */,
-				DEE8C5D119EA2D6C00B13ECF /* LaunchScreen.xib in Resources */,
 				DEC5C9DF19EADC8C008E3B30 /* Icon29@3x.png in Resources */,
 				DEC5C9DE19EADC8C008E3B30 /* Icon29@2x.png in Resources */,
+				9B99C0F61A0C637100C11359 /* EmptyProfileViewController.xib in Resources */,
 				DEE8C5CE19EA2D6C00B13ECF /* Images.xcassets in Resources */,
 				DEC5C9E019EADC8C008E3B30 /* Icon40@2x.png in Resources */,
 			);
@@ -281,6 +284,7 @@
 				DEE8C5C919EA2D6C00B13ECF /* SecondViewController.swift in Sources */,
 				DEE8C5C519EA2D6C00B13ECF /* AppDelegate.swift in Sources */,
 				DEE8C5C719EA2D6C00B13ECF /* FirstViewController.swift in Sources */,
+				9B99C0F51A0C637100C11359 /* EmptyProfileViewController.swift in Sources */,
 				9B8EB41E1A0C297700B33F0A /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,25 +306,6 @@
 			targetProxy = DEE8C5D719EA2D6C00B13ECF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DEE8C5CA19EA2D6C00B13ECF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEE8C5CB19EA2D6C00B13ECF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DEE8C5CF19EA2D6C00B13ECF /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEE8C5D019EA2D6C00B13ECF /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DEE8C5DE19EA2D6C00B13ECF /* Debug */ = {
