@@ -11,13 +11,14 @@
 		9B8EB41F1A0C297700B33F0A /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */; };
 		9BBD7EA71A0BEB3E003AAD2D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */; };
 		9BBD7EA81A0BEB3E003AAD2D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */; };
+		DE2A0AE31A084EE200BF0099 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */; };
+		DE2A0AE61A08516B00BF0099 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A0AE51A08516B00BF0099 /* CloudKit.framework */; };
 		DEC5C9DE19EADC8C008E3B30 /* Icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9D819EADC8C008E3B30 /* Icon29@2x.png */; };
 		DEC5C9DF19EADC8C008E3B30 /* Icon29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9D919EADC8C008E3B30 /* Icon29@3x.png */; };
 		DEC5C9E019EADC8C008E3B30 /* Icon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9DA19EADC8C008E3B30 /* Icon40@2x.png */; };
 		DEC5C9E119EADC8C008E3B30 /* Icon40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9DB19EADC8C008E3B30 /* Icon40@3x.png */; };
 		DEC5C9E219EADC8C008E3B30 /* Icon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9DC19EADC8C008E3B30 /* Icon60@2x.png */; };
 		DEC5C9E319EADC8C008E3B30 /* Icon60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9DD19EADC8C008E3B30 /* Icon60@3x.png */; };
-		DEC5C9E719EADDB0008E3B30 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5C9E619EADDB0008E3B30 /* CloudKit.framework */; };
 		DEE8C5C519EA2D6C00B13ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5C419EA2D6C00B13ECF /* AppDelegate.swift */; };
 		DEE8C5C719EA2D6C00B13ECF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5C619EA2D6C00B13ECF /* FirstViewController.swift */; };
 		DEE8C5C919EA2D6C00B13ECF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C5C819EA2D6C00B13ECF /* SecondViewController.swift */; };
@@ -42,14 +43,15 @@
 		9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		DE2A0AE41A08516700BF0099 /* OnCall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OnCall.entitlements; sourceTree = "<group>"; };
+		DE2A0AE51A08516B00BF0099 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DEC5C9D819EADC8C008E3B30 /* Icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon29@2x.png"; sourceTree = "<group>"; };
 		DEC5C9D919EADC8C008E3B30 /* Icon29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon29@3x.png"; sourceTree = "<group>"; };
 		DEC5C9DA19EADC8C008E3B30 /* Icon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon40@2x.png"; sourceTree = "<group>"; };
 		DEC5C9DB19EADC8C008E3B30 /* Icon40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon40@3x.png"; sourceTree = "<group>"; };
 		DEC5C9DC19EADC8C008E3B30 /* Icon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon60@2x.png"; sourceTree = "<group>"; };
 		DEC5C9DD19EADC8C008E3B30 /* Icon60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon60@3x.png"; sourceTree = "<group>"; };
-		DEC5C9E519EADDAE008E3B30 /* OnCall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OnCall.entitlements; sourceTree = "<group>"; };
-		DEC5C9E619EADDB0008E3B30 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DEE8C5BF19EA2D6C00B13ECF /* OnCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE8C5C319EA2D6C00B13ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE8C5C419EA2D6C00B13ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC5C9E719EADDB0008E3B30 /* CloudKit.framework in Frameworks */,
+				DE2A0AE61A08516B00BF0099 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +100,7 @@
 		DEE8C5B619EA2D6C00B13ECF = {
 			isa = PBXGroup;
 			children = (
-				DEC5C9E619EADDB0008E3B30 /* CloudKit.framework */,
+				DE2A0AE51A08516B00BF0099 /* CloudKit.framework */,
 				DEE8C5C119EA2D6C00B13ECF /* OnCall */,
 				DEE8C5D919EA2D6C00B13ECF /* OnCallTests */,
 				DEE8C5C019EA2D6C00B13ECF /* Products */,
@@ -117,10 +119,11 @@
 		DEE8C5C119EA2D6C00B13ECF /* OnCall */ = {
 			isa = PBXGroup;
 			children = (
-				DEC5C9E519EADDAE008E3B30 /* OnCall.entitlements */,
+				DE2A0AE41A08516700BF0099 /* OnCall.entitlements */,
 				DEE8C5C419EA2D6C00B13ECF /* AppDelegate.swift */,
 				DEE8C5C619EA2D6C00B13ECF /* FirstViewController.swift */,
 				DEE8C5C819EA2D6C00B13ECF /* SecondViewController.swift */,
+				DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */,
 				DEE8C5CA19EA2D6C00B13ECF /* Main.storyboard */,
 				DEE8C5CD19EA2D6C00B13ECF /* Images.xcassets */,
 				DEE8C5CF19EA2D6C00B13ECF /* LaunchScreen.xib */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BBD7EA71A0BEB3E003AAD2D /* LoginViewController.swift in Sources */,
+				DE2A0AE31A084EE200BF0099 /* CreateAccountViewController.swift in Sources */,
 				DEE8C5C919EA2D6C00B13ECF /* SecondViewController.swift in Sources */,
 				DEE8C5C519EA2D6C00B13ECF /* AppDelegate.swift in Sources */,
 				DEE8C5C719EA2D6C00B13ECF /* FirstViewController.swift in Sources */,
@@ -401,13 +405,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OnCall/OnCall.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OnCall/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -416,13 +416,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OnCall/OnCall.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OnCall/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

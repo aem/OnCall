@@ -1,16 +1,14 @@
-
-
 //
-//  SignUpViewController.swift
+//  CreateAccountViewController.swift
 //  OnCall
 //
-//  Created by Nikita Shenkman on 11/6/14.
+//  Created by Adam Markon on 11/3/14.
 //  Copyright (c) 2014 Marksman Apps. All rights reserved.
 //
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class CreateAccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +20,6 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
