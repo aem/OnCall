@@ -23,10 +23,13 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func return_login(sender: UIButton) {
-        
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func mt_prof_button(sender: UIButton) {
+        let vc = EmptyProfileViewController(nibName: "EmptyProfileViewController", bundle: nil)
+        self.presentViewController(vc, animated: true, completion: nil);
+    }
 
     /*
     // MARK: - Navigation

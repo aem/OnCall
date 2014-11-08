@@ -8,14 +8,44 @@
 
 import UIKit
 
-class EmptyProfileViewController: UIViewController {
+class EmptyProfileViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
 
+    @IBOutlet var imageView: UIImageView!
+    
+    @IBOutlet var window: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+
+    @IBAction func get_photo(sender: AnyObject) {
+        var picker = UIImagePickerController();
+        picker.delegate = self
+        picker.allowsEditing = true
+        picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        
+        self.presentViewController(picker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            
+        })
+        circlePhoto(image)
+    }
+    
+    func circlePhoto(image: UIImage) {
+
+
+        imageView.image = image
+        imageView.layer.cornerRadius = imageView.frame.size.width/2
+        imageView.clipsToBounds = true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

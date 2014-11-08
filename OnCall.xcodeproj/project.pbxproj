@@ -131,10 +131,10 @@
 				DEE8C5C219EA2D6C00B13ECF /* Supporting Files */,
 				9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */,
 				9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */,
-				9B8EB41C1A0C297700B33F0A /* SignUpViewController.swift */,
-				9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */,
 				9B99C0F31A0C637100C11359 /* EmptyProfileViewController.swift */,
 				9B99C0F41A0C637100C11359 /* EmptyProfileViewController.xib */,
+				9B8EB41C1A0C297700B33F0A /* SignUpViewController.swift */,
+				9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */,
 			);
 			path = OnCall;
 			sourceTree = "<group>";
