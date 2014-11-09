@@ -11,7 +11,7 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +28,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func mt_prof_button(sender: UIButton) {
         let vc = EmptyProfileViewController(nibName: "EmptyProfileViewController", bundle: nil)
+
         self.presentViewController(vc, animated: true, completion: nil);
     }
 

@@ -14,12 +14,12 @@ class EmptyProfileViewController: UIViewController, UINavigationControllerDelega
     
     @IBOutlet var window: UIView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
 
     @IBAction func get_photo(sender: AnyObject) {
         var picker = UIImagePickerController();
@@ -35,6 +35,8 @@ class EmptyProfileViewController: UIViewController, UINavigationControllerDelega
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
             
         })
+        
+        //image is the the image that they choose from their photo library
         circlePhoto(image)
     }
     
@@ -44,6 +46,11 @@ class EmptyProfileViewController: UIViewController, UINavigationControllerDelega
         imageView.image = image
         imageView.layer.cornerRadius = imageView.frame.size.width/2
         imageView.clipsToBounds = true
+    }
+    
+    @IBAction func finished(sender: UIButton) {
+        let vc = SecondViewController()
+        self.presentViewController(vc, animated: true, completion: nil);
     }
     
     override func didReceiveMemoryWarning() {
