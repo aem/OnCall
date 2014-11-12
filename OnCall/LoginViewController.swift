@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     let container: CKContainer
     let privateDB: CKDatabase
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+    var loggedIn = false;
     
     required init(coder aDecoder: NSCoder) {
         container = CKContainer.defaultContainer()
@@ -60,11 +62,8 @@ class LoginViewController: UIViewController {
                 if currPhone == self.phoneNumber.text &&
                     currPass == self.password.text {
                         loggedIn = true
-                        dispatch_async(dispatch_get_main_queue(), {
-                            showBasicAlert("Logged in!", message: nil)
-                        })
-                        
-                        return // TODO: Segue to main view controller
+                        self.userDefaults.setBool(true, forKey: kLoggedInKey)
+                        self.dismissViewControllerAnimated(true, completion: nil)
                 }
             }
             if !loggedIn {

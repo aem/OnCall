@@ -9,8 +9,6 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    let kLoggedInKey = "userIsLoggedIn"
-    let userDefaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()

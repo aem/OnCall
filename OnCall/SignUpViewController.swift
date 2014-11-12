@@ -52,7 +52,7 @@ class SignUpViewController: UIViewController {
         // TODO: Handle not logged in to iCloud
         if validatePhone(phoneNumber.text) &&
             validatePassword(phoneNumber.text) &&
-            userDoesntExist(phoneNumber.text) {
+             userDoesntExist(phoneNumber.text) {
                 var accountInfo = CKRecord(recordType: "AccountInfo")
                 accountInfo.setValue(phoneNumber.text, forKey: "phone_number")
                 accountInfo.setValue(password.text, forKey: "password")
@@ -63,8 +63,10 @@ class SignUpViewController: UIViewController {
                         })
                     } else {
                         dispatch_async(dispatch_get_main_queue(), {
-                            showBasicAlert("Completed", message: "Operation Completed")
+                            showBasicAlert("Done!",
+                                           message: "You're all signed up, now go log in!")
                         })
+                        self.returnToLogin(UIButton())
                     }
                 });
         }
