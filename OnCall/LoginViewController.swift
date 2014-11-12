@@ -9,6 +9,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var phoneNumber: UITextField!
+    @IBOutlet weak var password: UITextField!
     
     
     override func viewDidLoad() {
@@ -26,12 +28,15 @@ class LoginViewController: UIViewController {
     self.presentViewController(vc, animated: true, completion: nil);
     }
     
-
-    @IBAction func signup_button(sender: UIButton) {
-        let vc = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
-        self.presentViewController(vc, animated: true, completion: nil);
-
+    @IBAction func login() {
+        
     }
+    
+    @IBAction func openSignUpScreen() {
+        let vc = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
