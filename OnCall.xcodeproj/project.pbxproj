@@ -16,6 +16,7 @@
 		9BBD7EA81A0BEB3E003AAD2D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */; };
 		DE2A0AE31A084EE200BF0099 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */; };
 		DE2A0AE61A08516B00BF0099 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A0AE51A08516B00BF0099 /* CloudKit.framework */; };
+		DEC1FE7E1A12F0C90065A5A9 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1FE7D1A12F0C90065A5A9 /* UserDefaultsKeys.swift */; };
 		DEC5C9DE19EADC8C008E3B30 /* Icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9D819EADC8C008E3B30 /* Icon29@2x.png */; };
 		DEC5C9DF19EADC8C008E3B30 /* Icon29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9D919EADC8C008E3B30 /* Icon29@3x.png */; };
 		DEC5C9E019EADC8C008E3B30 /* Icon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C9DA19EADC8C008E3B30 /* Icon40@2x.png */; };
@@ -50,6 +51,7 @@
 		DE2A0AE21A084EE200BF0099 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		DE2A0AE41A08516700BF0099 /* OnCall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OnCall.entitlements; sourceTree = "<group>"; };
 		DE2A0AE51A08516B00BF0099 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DEC1FE7D1A12F0C90065A5A9 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		DEC5C9D819EADC8C008E3B30 /* Icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon29@2x.png"; sourceTree = "<group>"; };
 		DEC5C9D919EADC8C008E3B30 /* Icon29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon29@3x.png"; sourceTree = "<group>"; };
 		DEC5C9DA19EADC8C008E3B30 /* Icon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon40@2x.png"; sourceTree = "<group>"; };
@@ -131,10 +133,11 @@
 				DEE8C5C219EA2D6C00B13ECF /* Supporting Files */,
 				9BBD7EA51A0BEB3E003AAD2D /* LoginViewController.swift */,
 				9BBD7EA61A0BEB3E003AAD2D /* LoginViewController.xib */,
-				9B99C0F31A0C637100C11359 /* EmptyProfileViewController.swift */,
-				9B99C0F41A0C637100C11359 /* EmptyProfileViewController.xib */,
 				9B8EB41C1A0C297700B33F0A /* SignUpViewController.swift */,
 				9B8EB41D1A0C297700B33F0A /* SignUpViewController.xib */,
+				9B99C0F31A0C637100C11359 /* EmptyProfileViewController.swift */,
+				9B99C0F41A0C637100C11359 /* EmptyProfileViewController.xib */,
+				DEC1FE7D1A12F0C90065A5A9 /* UserDefaultsKeys.swift */,
 			);
 			path = OnCall;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				DE2A0AE31A084EE200BF0099 /* CreateAccountViewController.swift in Sources */,
 				DEE8C5C919EA2D6C00B13ECF /* SecondViewController.swift in Sources */,
 				DEE8C5C519EA2D6C00B13ECF /* AppDelegate.swift in Sources */,
+				DEC1FE7E1A12F0C90065A5A9 /* UserDefaultsKeys.swift in Sources */,
 				DEE8C5C719EA2D6C00B13ECF /* FirstViewController.swift in Sources */,
 				9B99C0F51A0C637100C11359 /* EmptyProfileViewController.swift in Sources */,
 				9B8EB41E1A0C297700B33F0A /* SignUpViewController.swift in Sources */,

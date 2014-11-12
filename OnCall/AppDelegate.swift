@@ -8,12 +8,44 @@
 
 import UIKit
 
+func showBasicAlert(title: String, #message: String?) {
+    let alert = UIAlertView(title: title,
+        message: message,
+        delegate: nil,
+        cancelButtonTitle: "Close")
+    alert.show()
+}
+
+func validatePhone(phone: String) -> Bool {
+    if NSAttributedString(string: phone).length != 10 {
+        showBasicAlert("Phone Number Invalid",
+            message: "Phone number should be 10 digits long. Please check that " +
+            "you entered your number correctly.")
+        return false
+    } else if phone.toInt() == nil {
+        showBasicAlert("Invalid Character(s)",
+            message: "One or more of the characters you entered was not a number. " +
+            "Please check that you entered your number correctly.")
+        return false
+    }
+    return true
+}
+
+func validatePassword(pass: String) -> Bool {
+    if NSAttributedString(string: pass).length < 6 {
+        showBasicAlert("Password too short",
+            message: "Your password should be at least 6 characters. Please " +
+            "try again.")
+        return false
+    }
+    return true
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="OnCall" customModuleProvider="target">
             <connections>
+                <outlet property="password" destination="C5s-VC-I6u" id="4pZ-bt-puz"/>
+                <outlet property="phoneNumber" destination="JiK-U4-DMp" id="PfI-W2-kvI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="x2o-Jc-7kC"/>
             </connections>
         </placeholder>
@@ -48,7 +50,7 @@
                         <rect key="frame" x="82" y="475" width="157" height="30"/>
                     </variation>
                     <connections>
-                        <action selector="signup_button:" destination="-1" eventType="touchUpInside" id="Oa1-qC-YdF"/>
+                        <action selector="openSignUpScreen" destination="-1" eventType="touchUpInside" id="Tgw-wW-AtN"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S8-qe-lOu">
@@ -64,10 +66,10 @@
                         <rect key="frame" x="122" y="202" width="76" height="21"/>
                     </variation>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password        " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5s-VC-I6u">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password        " clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="C5s-VC-I6u">
                     <rect key="frame" x="26" y="281" width="130" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="102" y="231" width="122" height="30"/>
                     </variation>
@@ -88,7 +90,7 @@
                         <rect key="frame" x="142" y="269" width="43" height="30"/>
                     </variation>
                     <connections>
-                        <action selector="login_button:" destination="-1" eventType="touchUpInside" id="aaV-La-VT7"/>
+                        <action selector="login" destination="-1" eventType="touchUpInside" id="0Hk-qP-I8B"/>
                     </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(XXX)-XXX-XXXX" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JiK-U4-DMp">

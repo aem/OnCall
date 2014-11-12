@@ -39,7 +39,7 @@ class EmptyProfileViewController: UIViewController, UINavigationControllerDelega
         //image is the the image that they choose from their photo library
         circlePhoto(image)
     }
-    
+
     func circlePhoto(image: UIImage) {
 
 
@@ -49,8 +49,8 @@ class EmptyProfileViewController: UIViewController, UINavigationControllerDelega
     }
     
     @IBAction func finished(sender: UIButton) {
-        let vc = SecondViewController()
-        self.presentViewController(vc, animated: true, completion: nil);
+        let vc = storyboard?.instantiateViewControllerWithIdentifier("vc") as SecondViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

@@ -9,19 +9,18 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
-
     }
     
     override func viewDidAppear(animated: Bool) {
-        let lc = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        self.presentViewController(lc, animated: animated, completion: nil)
+        var isLoggedIn = userDefaults.boolForKey(kLoggedInKey)
+        if isLoggedIn == false {
+            let lc = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            self.presentViewController(lc, animated: animated, completion: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -30,14 +29,7 @@ class FirstViewController: UIViewController {
         
         
     }
-    
-    func launchLoginViewController() {
-        let lc = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        
-        self.presentViewController(lc, animated: true, completion: nil)
-    }
-    
-    
+
     /*
     // MARK: - Navigation
     
