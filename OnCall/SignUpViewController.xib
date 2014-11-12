@@ -6,6 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="OnCall" customModuleProvider="target">
             <connections>
+                <outlet property="confirmPass" destination="25d-5x-Gh1" id="IVq-Le-Lvo"/>
+                <outlet property="password" destination="jtC-2X-2q6" id="itB-Zl-hBK"/>
+                <outlet property="phoneNumber" destination="7zZ-G5-NDg" id="rnH-pr-CGw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -36,7 +39,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="return_login:" destination="-1" eventType="touchUpInside" id="RYV-C4-4p7"/>
+                        <action selector="returnToLogin:" destination="-1" eventType="touchUpInside" id="y6e-EW-TaZ"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-Ip-jMv">
@@ -61,7 +64,7 @@
                         <constraint firstAttribute="width" constant="130" id="kvO-qJ-47T"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="102" y="157" width="122" height="30"/>
                     </variation>
@@ -79,14 +82,14 @@
                         <rect key="frame" x="122" y="202" width="76" height="21"/>
                     </variation>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password        " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtC-2X-2q6">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password        " clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jtC-2X-2q6">
                     <rect key="frame" x="230" y="202" width="130" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="130" id="EAC-v2-nBB"/>
                         <constraint firstAttribute="height" constant="30" id="XNo-C3-onU"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="102" y="231" width="122" height="30"/>
                     </variation>
@@ -104,18 +107,6 @@
                         <rect key="frame" x="122" y="202" width="76" height="21"/>
                     </variation>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password        " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25d-5x-Gh1">
-                    <rect key="frame" x="230" y="264" width="130" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="7X9-dQ-WYj"/>
-                        <constraint firstAttribute="width" constant="130" id="fbt-Ad-oFX"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                    <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="102" y="231" width="122" height="30"/>
-                    </variation>
-                </textField>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" placeholderIntrinsicWidth="61" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkB-gg-ZYz">
                     <rect key="frame" x="252" y="302" width="85" height="30"/>
                     <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -131,7 +122,22 @@
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="142" y="269" width="43" height="30"/>
                     </variation>
+                    <connections>
+                        <action selector="signUp" destination="-1" eventType="touchUpInside" id="VLu-2h-XpA"/>
+                    </connections>
                 </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password        " clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="25d-5x-Gh1">
+                    <rect key="frame" x="230" y="264" width="130" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="7X9-dQ-WYj"/>
+                        <constraint firstAttribute="width" constant="130" id="fbt-Ad-oFX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                    <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="102" y="231" width="122" height="30"/>
+                    </variation>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
