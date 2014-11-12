@@ -52,7 +52,7 @@ class SignUpViewController: UIViewController {
         // TODO: Handle not logged in to iCloud
         if validatePhone(phoneNumber.text) &&
             validatePassword(phoneNumber.text) &&
-             userDoesntExist(phoneNumber.text) {
+             !userDoesntExist(phoneNumber.text) {
                 var accountInfo = CKRecord(recordType: "AccountInfo")
                 accountInfo.setValue(phoneNumber.text, forKey: "phone_number")
                 accountInfo.setValue(password.text, forKey: "password")
@@ -85,9 +85,10 @@ class SignUpViewController: UIViewController {
             }
             for record in results as [CKRecord] {
                 let currPhone = record.valueForKey("phone_number") as String
+                NSLog(currPhone)
                 var numberFound = numberFound || (currPhone == self.phoneNumber.text)
             }
-            if !numberFound {
+            if !numberFound && results.count != 0 {
                 dispatch_async(dispatch_get_main_queue(), {
                     showBasicAlert("Account already exists!", message: "Please try logging in.")
                 })
