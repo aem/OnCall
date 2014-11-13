@@ -41,6 +41,11 @@ func validatePassword(pass: String) -> Bool {
     return true
 }
 
+
+
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

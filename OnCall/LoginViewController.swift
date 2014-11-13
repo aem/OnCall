@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     let privateDB: CKDatabase
     let userDefaults = NSUserDefaults.standardUserDefaults()
     var loggedIn = false;
+    var keyboardOpen = false
     
     required init(coder aDecoder: NSCoder) {
         container = CKContainer.defaultContainer()
@@ -34,6 +35,21 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        
+        
+        let center = NSNotificationCenter.defaultCenter()
+        
+        center.addObserver(self,
+            selector: "handleKeyboardWillShow:",
+            name: UIKeyboardWillShowNotification,
+            object: nil)
+        
+        center.addObserver(self,
+            selector: "handleKeyboardWillHide:",
+            name: UIKeyboardWillHideNotification,
+            object: nil)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -77,6 +93,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func openSignUpScreen() {
+
         let vc = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
         self.presentViewController(vc, animated: true, completion: nil)
     }
@@ -104,6 +121,40 @@ class LoginViewController: UIViewController {
         }
         return numberFound
     }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
+    func handleKeyboardWillShow(aNotification: NSNotification) {
+        if (!keyboardOpen) {
+        
+            let info = aNotification.userInfo as NSDictionary?
+            let rectValue = info![UIKeyboardFrameBeginUserInfoKey] as NSValue
+            let kbHeight = rectValue.CGRectValue().size.height
+            var distToMoveUp = 100 - kbHeight
+            
+            self.view.frame.offset(dx: 0, dy:  distToMoveUp)
+            keyboardOpen = true;
+        }
+    }
+    
+    func handleKeyboardWillHide(aNotification: NSNotification) {
+        if (keyboardOpen) {
+
+            let info = aNotification.userInfo as NSDictionary?
+            let rectValue = info![UIKeyboardFrameBeginUserInfoKey] as NSValue
+            let kbHeight = rectValue.CGRectValue().size.height
+            var distToMoveDown = kbHeight - 100
+            
+            self.view.frame.offset(dx: 0, dy: distToMoveDown)
+            keyboardOpen = false;
+        }
+    }
+
+
+    
+    
     
     /*
     // MARK: - Navigation

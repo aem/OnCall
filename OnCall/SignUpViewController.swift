@@ -50,8 +50,8 @@ class SignUpViewController: UIViewController {
     @IBAction func signUp() {
         // TODO: Handle Airplane mode
         // TODO: Handle not logged in to iCloud
-        if validatePhone(phoneNumber.text) &&
-            validatePassword(phoneNumber.text) &&
+        if self.validatePhone(phoneNumber.text) &&
+            validatePassword(password.text) &&
              !userDoesntExist(phoneNumber.text) {
                 var accountInfo = CKRecord(recordType: "AccountInfo")
                 accountInfo.setValue(phoneNumber.text, forKey: "phone_number")
@@ -112,9 +112,12 @@ class SignUpViewController: UIViewController {
             showBasicAlert("Passwords Don't Match",
                 message: "The passwords you entered don't " +
                 "match. Please check that the information you entered is correct.")
+            return false
         }
         return true
     }
+    
+    
 
     /*
     // MARK: - Navigation
