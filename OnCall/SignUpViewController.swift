@@ -17,6 +17,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var confirmPass: UITextField!
     let container: CKContainer
     let privateDB: CKDatabase
+    var keyboardOpen = false
+    var distToMove: CGFloat = 0
+
     
     required init(coder aDecoder: NSCoder) {
         container = CKContainer.defaultContainer()
@@ -34,8 +37,23 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        let center = NSNotificationCenter.defaultCenter()
+        
+        center.addObserver(self,
+            selector: "handleKeyboardWillShow:",
+            name: UIKeyboardWillShowNotification,
+            object: nil)
+        
+        center.addObserver(self,
+            selector: "handleKeyboardWillHide:",
+            name: UIKeyboardWillHideNotification,
+            object: nil)
+        
+        phoneNumber.autocorrectionType = UITextAutocorrectionType.No
+
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -115,6 +133,35 @@ class SignUpViewController: UIViewController {
             return false
         }
         return true
+    }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
+    func handleKeyboardWillShow(aNotification: NSNotification) {
+        if (!keyboardOpen) {
+            
+            let info = aNotification.userInfo as NSDictionary?
+            let rectValue = info![UIKeyboardFrameBeginUserInfoKey] as NSValue
+            let kbHeight = rectValue.CGRectValue().size.height
+            distToMove = 140 - kbHeight
+            
+            self.view.frame.offset(dx: 0, dy:  distToMove)
+            keyboardOpen = true;
+        }
+    }
+    
+    func handleKeyboardWillHide(aNotification: NSNotification) {
+        if (keyboardOpen) {
+            
+            let info = aNotification.userInfo as NSDictionary?
+            let rectValue = info![UIKeyboardFrameBeginUserInfoKey] as NSValue
+            let kbHeight = rectValue.CGRectValue().size.height
+            
+            self.view.frame.offset(dx: 0, dy: -distToMove)
+            keyboardOpen = false;
+        }
     }
     
     

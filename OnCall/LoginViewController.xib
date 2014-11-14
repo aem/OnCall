@@ -16,12 +16,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPv-WN-YO6">
-                    <rect key="frame" x="26" y="198" width="130" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="cd9-KR-g8Q"/>
-                        <constraint firstAttribute="width" constant="130" id="mUN-Qn-UcQ"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
+                    <rect key="frame" x="26" y="197" width="166" height="21"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
@@ -34,31 +30,9 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njd-TL-4xn">
-                    <rect key="frame" x="12" y="546" width="180" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="180" id="M2r-Fp-UaI"/>
-                        <constraint firstAttribute="height" constant="30" id="vkq-eI-HRr"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
-                    <state key="normal" title="I dont have an account">
-                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="82" y="475" width="157" height="30"/>
-                    </variation>
-                    <connections>
-                        <action selector="openSignUpScreen" destination="-1" eventType="touchUpInside" id="Tgw-wW-AtN"/>
-                    </connections>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S8-qe-lOu">
-                    <rect key="frame" x="29" y="262" width="122" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="RlU-06-aik"/>
-                        <constraint firstAttribute="width" constant="122" id="e83-Sb-z35"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
+                    <rect key="frame" x="30" y="262" width="122" height="21"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
@@ -84,26 +58,44 @@
                         <action selector="login" destination="-1" eventType="touchUpInside" id="0Hk-qP-I8B"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(XXX)-XXX-XXXX" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JiK-U4-DMp">
-                    <rect key="frame" x="26" y="219" width="130" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1234567891" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JiK-U4-DMp">
+                    <rect key="frame" x="26" y="219" width="125" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ZW6-VJ-PHI"/>
+                        <constraint firstAttribute="width" constant="125" id="zHa-7i-UGe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="19"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="102" y="157" width="122" height="30"/>
                     </variation>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password        " clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dQJ-Hv-arc">
-                    <rect key="frame" x="19" y="285" width="156" height="30"/>
+                    <rect key="frame" x="19" y="285" width="172" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="9l4-AV-Lk1"/>
-                        <constraint firstAttribute="width" constant="156" id="TAJ-Es-e9r"/>
+                        <constraint firstAttribute="width" constant="172" id="uq2-Qc-QTc"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="102" y="231" width="122" height="30"/>
                     </variation>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njd-TL-4xn">
+                    <rect key="frame" x="12" y="546" width="255" height="30"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
+                    <state key="normal" title="I dont have an account">
+                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="82" y="475" width="157" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="openSignUpScreen" destination="-1" eventType="touchUpInside" id="Tgw-wW-AtN"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -112,10 +104,10 @@
                 <constraint firstItem="mrE-AV-qn8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="7Lv-9A-hj2"/>
                 <constraint firstAttribute="centerX" secondItem="6S8-qe-lOu" secondAttribute="centerX" id="Bmx-RI-At6"/>
                 <constraint firstAttribute="centerX" secondItem="6S8-qe-lOu" secondAttribute="centerX" id="Ndv-VD-cjP"/>
-                <constraint firstItem="tPv-WN-YO6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="198" id="Nj8-UG-LzH"/>
                 <constraint firstAttribute="centerX" secondItem="6S8-qe-lOu" secondAttribute="centerX" id="QOY-67-h0b"/>
                 <constraint firstAttribute="centerX" secondItem="JiK-U4-DMp" secondAttribute="centerX" id="RsK-RI-cch"/>
                 <constraint firstItem="6S8-qe-lOu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="262" id="VKD-zO-5Qt"/>
+                <constraint firstItem="tPv-WN-YO6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="197" id="WQd-wv-95v"/>
                 <constraint firstItem="VO9-L5-j5Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="319" id="Yaw-rP-ysy"/>
                 <constraint firstAttribute="centerX" secondItem="mrE-AV-qn8" secondAttribute="centerX" id="a3k-IS-9Wx"/>
                 <constraint firstAttribute="centerX" secondItem="tPv-WN-YO6" secondAttribute="centerX" id="l3y-6G-ftR"/>

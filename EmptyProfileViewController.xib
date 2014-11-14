@@ -6,62 +6,20 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyProfileViewController" customModule="OnCall" customModuleProvider="target">
             <connections>
+                <outlet property="firstName" destination="bVu-OI-rBH" id="Q2q-y6-Thw"/>
                 <outlet property="imageView" destination="WOG-9q-Mhp" id="zfU-Kc-AX7"/>
+                <outlet property="lastName" destination="cFP-vz-ljM" id="lPT-zy-cXe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="DZy-Mh-734"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You're Almost Done!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQp-Hw-cWo">
-                    <rect key="frame" x="182" y="32" width="219" height="34"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="219" id="5LF-Zu-7W0"/>
-                        <constraint firstAttribute="height" constant="34" id="FAD-mX-fC7"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-OI-rBH">
-                    <rect key="frame" x="86" y="79" width="97" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="97" id="DSt-64-kcl"/>
-                        <constraint firstAttribute="height" constant="30" id="gcQ-UM-W02"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULb-mA-XO6">
-                    <rect key="frame" x="8" y="77" width="70" height="70"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon60@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="WOG-9q-Mhp">
-                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <gestureRecognizers/>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="B17-Yb-UzM" appends="YES" id="hgY-hQ-1tU"/>
-                    </connections>
-                </view>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="130" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(XXX)-XXX-XXXX" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnO-vf-qKO">
-                    <rect key="frame" x="86" y="117" width="130" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="GlM-py-yEe"/>
-                        <constraint firstAttribute="width" constant="130" id="nYA-L5-KMt"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="102" y="157" width="122" height="30"/>
-                    </variation>
-                </textField>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mV-PY-WE5">
-                    <rect key="frame" x="191" y="532" width="88" height="30"/>
-                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                    <rect key="frame" x="191" y="532" width="99" height="30"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
                     <state key="normal" title="I'm Done">
                         <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
@@ -69,29 +27,68 @@
                         <action selector="finished:" destination="-1" eventType="touchUpInside" id="wMQ-Wh-mLP"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-vz-ljM">
-                    <rect key="frame" x="191" y="79" width="97" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-vz-ljM">
+                    <rect key="frame" x="142" y="252" width="122" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="97" id="wHE-mh-XAj"/>
+                        <constraint firstAttribute="width" constant="122" id="iPu-aE-Jv5"/>
                         <constraint firstAttribute="height" constant="30" id="wlX-al-iOt"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="19"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+                <view contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULb-mA-XO6">
+                    <rect key="frame" x="34" y="94" width="150" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="pQm-gg-Fav"/>
+                        <constraint firstAttribute="height" constant="150" id="ta4-rU-AaY"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="B17-Yb-UzM" appends="YES" id="hgY-hQ-1tU"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Icon60@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="WOG-9q-Mhp">
+                    <rect key="frame" x="192" y="94" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="gCf-OE-FXb"/>
+                        <constraint firstAttribute="height" constant="150" id="v58-JP-gzb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You're Almost Done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQp-Hw-cWo">
+                    <rect key="frame" x="182" y="29" width="296" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="FAD-mX-fC7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="30"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-OI-rBH">
+                    <rect key="frame" x="8" y="252" width="126" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="126" id="Lgi-ib-yfy"/>
+                        <constraint firstAttribute="height" constant="30" id="gcQ-UM-W02"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="19"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                 </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <gestureRecognizers/>
             <constraints>
+                <constraint firstItem="cFP-vz-ljM" firstAttribute="leading" secondItem="bVu-OI-rBH" secondAttribute="trailing" constant="8" id="5wP-T4-RVm"/>
                 <constraint firstAttribute="centerX" secondItem="4mV-PY-WE5" secondAttribute="centerX" id="8es-kX-AUw"/>
+                <constraint firstItem="cFP-vz-ljM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="252" id="8q3-dB-xqa"/>
                 <constraint firstAttribute="bottom" secondItem="4mV-PY-WE5" secondAttribute="bottom" constant="38" id="Dzu-eT-ZG2"/>
-                <constraint firstItem="bVu-OI-rBH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="H1S-PR-gxp"/>
-                <constraint firstItem="cFP-vz-ljM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="KWl-lZ-7AZ"/>
-                <constraint firstItem="cFP-vz-ljM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="191" id="Kkm-vO-3D8"/>
-                <constraint firstItem="SQp-Hw-cWo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="cSF-I0-mTw"/>
-                <constraint firstItem="xnO-vf-qKO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="117" id="gC7-lo-YHa"/>
-                <constraint firstItem="xnO-vf-qKO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="86" id="hbu-cO-lbv"/>
+                <constraint firstAttribute="centerX" secondItem="WOG-9q-Mhp" secondAttribute="centerX" id="E1p-Dt-kMx"/>
+                <constraint firstItem="ULb-mA-XO6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="K6T-k3-d9B"/>
+                <constraint firstItem="bVu-OI-rBH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="252" id="KKm-3A-vPL"/>
+                <constraint firstItem="WOG-9q-Mhp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="dk3-W2-5XO"/>
                 <constraint firstAttribute="centerX" secondItem="SQp-Hw-cWo" secondAttribute="centerX" id="idR-Xz-IHO"/>
-                <constraint firstItem="bVu-OI-rBH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="86" id="xcL-A6-SDx"/>
+                <constraint firstAttribute="centerX" secondItem="ULb-mA-XO6" secondAttribute="centerX" id="kOu-Wu-kL0"/>
+                <constraint firstItem="ULb-mA-XO6" firstAttribute="leading" secondItem="bVu-OI-rBH" secondAttribute="trailing" constant="-71" id="lRm-QN-2y2"/>
+                <constraint firstItem="SQp-Hw-cWo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="xGW-8J-wd7"/>
             </constraints>
             <point key="canvasLocation" x="268" y="379"/>
         </view>
