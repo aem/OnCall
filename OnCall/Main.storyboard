@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xal-7D-mNO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xal-7D-mNO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -50,13 +50,99 @@
                     <view key="view" contentMode="scaleToFill" id="o0d-VK-Lhv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Whatchya up to?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tuB-hk-npv">
+                                <rect key="frame" x="16" y="112" width="512" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YG8-dt-vT6">
+                                <rect key="frame" x="535" y="112" width="51" height="31"/>
+                                <color key="onTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circular-profile-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="5O3-ND-7vb">
+                                <rect key="frame" x="6" y="44" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="BvA-e2-TVr"/>
+                                    <constraint firstAttribute="width" constant="45" id="KXf-dD-KWl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Availabilites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeN-Wz-h8O">
+                                <rect key="frame" x="208" y="162" width="184" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="WfG-c6-mWj"/>
+                                    <constraint firstAttribute="width" constant="184" id="vJJ-CA-kqQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nikita Shenkman" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1k-K3-uPo">
+                                <rect key="frame" x="59" y="52" width="246" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUt-6E-bRu">
+                                <rect key="frame" x="6" y="162" width="30" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addAvailability:" destination="soi-6q-hmR" eventType="touchUpInside" id="YjI-bD-kWT"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2g5-lo-OWH">
+                                <rect key="frame" x="6" y="192" width="571" height="364"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YG8-dt-vT6" firstAttribute="top" secondItem="SnP-LD-mji" secondAttribute="bottom" constant="92" id="036-0j-ZIh"/>
+                            <constraint firstItem="2g5-lo-OWH" firstAttribute="leading" secondItem="o0d-VK-Lhv" secondAttribute="leadingMargin" constant="-10" id="0Vm-AR-Bcy"/>
+                            <constraint firstItem="tuB-hk-npv" firstAttribute="leading" secondItem="o0d-VK-Lhv" secondAttribute="leadingMargin" id="1fo-m0-sFX"/>
+                            <constraint firstItem="YG8-dt-vT6" firstAttribute="leading" secondItem="tuB-hk-npv" secondAttribute="trailing" constant="7" id="7oh-4q-fgv"/>
+                            <constraint firstItem="2g5-lo-OWH" firstAttribute="top" secondItem="XeN-Wz-h8O" secondAttribute="bottom" constant="8" id="AJP-tA-1Xq"/>
+                            <constraint firstAttribute="centerX" secondItem="XeN-Wz-h8O" secondAttribute="centerX" id="Col-NB-PvF"/>
+                            <constraint firstItem="KzB-Ka-4Tz" firstAttribute="top" secondItem="2g5-lo-OWH" secondAttribute="bottom" id="KdT-DN-q6j"/>
+                            <constraint firstItem="tuB-hk-npv" firstAttribute="top" secondItem="SnP-LD-mji" secondAttribute="bottom" constant="92" id="LFt-mI-DNB"/>
+                            <constraint firstItem="YG8-dt-vT6" firstAttribute="trailing" secondItem="o0d-VK-Lhv" secondAttribute="trailingMargin" id="OvQ-y9-ia1"/>
+                            <constraint firstItem="5O3-ND-7vb" firstAttribute="top" secondItem="SnP-LD-mji" secondAttribute="bottom" constant="24" id="VZv-W2-0vL"/>
+                            <constraint firstItem="h1k-K3-uPo" firstAttribute="leading" secondItem="5O3-ND-7vb" secondAttribute="trailing" constant="8" id="VcE-Yl-YGe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2g5-lo-OWH" secondAttribute="trailing" constant="7" id="cML-pj-i5S"/>
+                            <constraint firstItem="XeN-Wz-h8O" firstAttribute="top" secondItem="SnP-LD-mji" secondAttribute="bottom" constant="142" id="cmC-py-jxl"/>
+                            <constraint firstItem="tuB-hk-npv" firstAttribute="leading" secondItem="o0d-VK-Lhv" secondAttribute="leadingMargin" id="gZ9-wh-60Q"/>
+                            <constraint firstItem="h1k-K3-uPo" firstAttribute="top" secondItem="SnP-LD-mji" secondAttribute="bottom" constant="32" id="hee-Nh-1at"/>
+                            <constraint firstItem="5O3-ND-7vb" firstAttribute="leading" secondItem="o0d-VK-Lhv" secondAttribute="leadingMargin" constant="-10" id="m7w-11-Iv2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="FDv-ln-YQi"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="allAvailabilities" destination="2g5-lo-OWH" id="wyC-S5-3oa"/>
+                        <outlet property="availablitySwitch" destination="YG8-dt-vT6" id="Nfk-VU-AtC"/>
+                        <outlet property="name" destination="h1k-K3-uPo" id="bEt-jM-5jU"/>
+                        <outlet property="profilePic" destination="5O3-ND-7vb" id="tGb-P1-QLC"/>
+                        <outlet property="searchDisplayController" destination="Tna-eH-BEe" id="Wvk-BJ-Xm5"/>
+                        <outlet property="status" destination="tuB-hk-npv" id="B17-Tl-VYU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbJ-2y-u3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Tna-eH-BEe">
+                    <connections>
+                        <outlet property="delegate" destination="soi-6q-hmR" id="1Vn-Kj-Rhu"/>
+                        <outlet property="searchContentsController" destination="soi-6q-hmR" id="G1J-Vc-2cv"/>
+                        <outlet property="searchResultsDataSource" destination="soi-6q-hmR" id="4s1-WY-ebB"/>
+                        <outlet property="searchResultsDelegate" destination="soi-6q-hmR" id="DBn-hu-LxO"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1004" y="-16"/>
+            <point key="canvasLocation" x="1004" y="-78"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TE9-HB-iZC">
@@ -78,4 +164,7 @@
             <point key="canvasLocation" x="184" y="315"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circular-profile-1.png" width="500" height="500"/>
+    </resources>
 </document>

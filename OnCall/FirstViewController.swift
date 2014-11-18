@@ -9,18 +9,25 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    @IBOutlet weak var name: UILabel!
     
+    @IBOutlet weak var allAvailabilities: UITableView!
+    @IBAction func addAvailability(sender: UIButton) {
+    }
+    @IBOutlet weak var status: UITextField!
+    @IBOutlet weak var availablitySwitch: UISwitch!
+    @IBOutlet weak var profilePic: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(animated: Bool) {
-        var isLoggedIn = userDefaults.boolForKey(kLoggedInKey)
+        /*var isLoggedIn = userDefaults.boolForKey(kLoggedInKey)
         if !isLoggedIn {
             let lc = LoginViewController(nibName: "LoginViewController", bundle: nil)
             self.presentViewController(lc, animated: animated, completion: nil)
-        }
+        } */
         
     }
     
