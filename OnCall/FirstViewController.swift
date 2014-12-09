@@ -23,11 +23,11 @@ class FirstViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        /*var isLoggedIn = userDefaults.boolForKey(kLoggedInKey)
+        var isLoggedIn = userDefaults.boolForKey(kLoggedInKey)
         if !isLoggedIn {
             let lc = LoginViewController(nibName: "LoginViewController", bundle: nil)
             self.presentViewController(lc, animated: animated, completion: nil)
-        } */
+        }
         
     }
     
